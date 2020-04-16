@@ -23,7 +23,7 @@ class Form extends React.Component {
   }
 
   handleSubmit = (e) => {
-    e.preventDefault()
+    
     
     this.props.dispatch(add(this.state.name))
     
@@ -46,9 +46,9 @@ class Form extends React.Component {
      <label htmlFor="inputName" className="sr-only">Name</label>
      <input type="Name" className="form-control" id="inputName" onChange={this.handleInput} value={this.state.name} placeholder="Name" required/>
    </div>
-   <button type="submit"  className="btn btn-primary" onClick={this.handleSubmit}>Submit</button>   
+      
    <Link href="/main">
-   <a className="btn btn-link ">click to go to the main page</a>
+   <button type="submit"  className="btn btn-primary" onClick={this.handleSubmit}>Submit</button>
  </Link>
 
      </form>

@@ -30,7 +30,7 @@ import Link from 'next/link'
       };
   
       handleSubmit = event =>{
-        event.preventDefault()
+        
       
       this.props.dispatch(report(this.state))
   //     if(this.state.city==""||this.state.country==""){
@@ -71,9 +71,9 @@ import Link from 'next/link'
                 </div>
                 
                 <div className="col-md-3 mt-md-0 mt-2 text-md-left ">
-            <button className="btn btn-warning" onClick={this.handleSubmit}>Submit</button>
+            
             <Link href="/Weather">
-            <a className="btn btn-link ">Get Weather</a>
+            <button className="btn btn-warning" onClick={this.handleSubmit}>Submit</button>
             </Link>  
           </div>
               </form>
